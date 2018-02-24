@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <link rel='stylesheet' type='text/css' href='/css/main.css'>
+    <link rel='stylesheet' type='text/css' href='/css/bootstrap.css'>
+  </head>
+  <body>
+
+      <div id='app'>
+
+        <div id='headers' class ='center'>
+          <h1 id="title">THIS ... IS ... Guessing Game!!!</h1>
+          <h2 id ="subtitle"> Guess a number between 1-100</h2>
+        </div>
+
+        <div id='main' class='center'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <p id="winningNumberFloat">'</p>
+              <input id = 'userInput' placeholder='#'       maxlength="3" class='buffer'></input> 
+            <button id = 'submit' class = 'btn-success'>Go!</button>
+          </div>
+
+          <div id='past-guesses'>
+              <ul class='body-list'>
+                  <li class = 'guesses'>-</li>
+                  <li class = 'guesses'>-</li>
+                  <li class = 'guesses'>-</li>
+                  <li class = 'guesses'>-</li>
+                  <li class = 'guesses'>-</li>
+              </ul>
+            <!-- unordered list of guesses -->
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id = 'reset' href="#" class = 'btn-warning' enabled>Reset</button>
+            <button id='hint' href="#" class = 'btn-primary' enabled>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer'>
+        <div class='center'>
+          <!--  <ul class='footer-list'>
+              <li class='footer-list-item'><img src='fa-logo@2x_preview.png'></li>
+              <li class='footer-list-item'><h3>Project by Daniel Feeney</h3></li>
+              <li class='footer-list-item'><img src='grace_hopper_academy_preview.png'></li>
+            </ul> -->
+            <div class='row' id=footer-content>
+                <div class="col-md-4">
+                    <img src='fa-logo@2x_preview.png'>
+                </div>
+                <div class="col-md-4">
+                    <h3>Project by Daniel Feeney</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src='grace_hopper_academy_preview.png'>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="/javascript/jquery-3.3.1.min.js"></script>
+    <script src="/javascript/GuessingGame-Part2/GuessingGame.js"></script>
+  </body>
+</html>
